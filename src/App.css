@@ -4,6 +4,9 @@
   grid-template-columns: 30% 40% 30%;
   grid-template-rows: 15% 40% 30%;
 }
+body {
+  background-image: url(https://previews.123rf.com/images/givaga/givaga1501/givaga150100010/35071604-puente-en-el-bosque-de-oto%C3%B1o-con-hojas-rojas.jpg);
+}
 .container {
   grid-row-start: 2;
   grid-column-start: 2;
@@ -13,8 +16,14 @@
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 20% 20% 20% 20%;
-  background-color: yellow;
   border-radius: 20%;
+  text-align: center;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  backdrop-filter: blur(1rem);
+  background-color: rgba(255, 255, 255, 0.6);
+  border: 0.1rem rgba(255, 255, 255, 0.18);
 }
 h1 {
   margin-bottom: 10px;
