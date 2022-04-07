@@ -6,10 +6,10 @@ import clim from "./image/nube.gif"
 
 
 function App() {
-const [city, setCity] = useState({});
-const [climate, setClimate] = useState({});
-const [tempe,setTempe] = useState({})
-const [winds, setWinds] = useState({})
+const [city, setCity] = useState("");
+const [climate, setClimate] = useState("");
+const [tempe,setTempe] = useState("")
+const [winds, setWinds] = useState("")
 const [isDc, setIsDc] = useState(true);
 const [k, setK] = useState();
 const[mi,setMi]= useState()
@@ -73,8 +73,8 @@ const[mi,setMi]= useState()
     <div className="data">
       <h3> <b>Wind Speed: </b> {winds} </h3>
       <h3> <b>Day:</b> {climate.weather?.[0].main}</h3>
-      <h3> <b>Clouds:</b> {climate.clouds?.all}</h3>
-      <h3> <b>Pressure:</b>{tempe} </h3>
+      <h3> <b>Clouds:</b> {climate.clouds?.all} {mi} </h3>
+      <h3> <b>Pressure:</b>{tempe} {k} </h3>
    </div>
  
   <div className="button">
