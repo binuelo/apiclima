@@ -71,9 +71,9 @@ const[mi,setMi]= useState()
     </div> 
 
     <div className="data">
-      <h3> <b>Wind Speed: </b> {winds} </h3>
+      <h3> <b>Wind Speed: </b> {winds} {mi}</h3>
       <h3> <b>Day:</b> {climate.weather?.[0].main}</h3>
-      <h3> <b>Clouds:</b> {climate.clouds?.all} {mi} </h3>
+      <h3> <b>Clouds:</b> {climate.clouds?.all}  </h3>
       <h3> <b>Pressure:</b>{tempe} {k} </h3>
    </div>
  
