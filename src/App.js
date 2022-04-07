@@ -4,9 +4,10 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import clim from "./image/nube.gif"
 
+
 function App() {
 const [city, setCity] = useState({});
- const [climate, setClimate] = useState({});
+const [climate, setClimate] = useState({});
 const [tempe,setTempe] = useState({})
 const [winds, setWinds] = useState({})
 const [isDc, setIsDc] = useState(true);
@@ -59,13 +60,13 @@ const[mi,setMi]= useState()
   return (
 <div className="App">
   <div className="container">
-      <div className="city">
+       <div className="city">
       Wheather App
       <h1> 
         {city} {climate.sys?.country}
       </h1>
     </div>
-    <div className="image">
+   <div className="image">
        <img src={clim} alt="" /> 
     </div> 
 
